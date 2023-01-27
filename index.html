@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title >
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Frank+Ruhl+Libre:wght@700&display=swap" rel="stylesheet">
+<style>
+    header ::before
+    {
+        content: "   ";
+        background: url('images/background\ image.jpg')  ;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;   
+        /* background: url('images/bob-canning-r53rNKb_7s8-unsplash.jpg');
+        background-repeat: no-repeat; */
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -10;
+        opacity: 0.6;   
+    }
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 40px;
+        top: 40px;
+        flex-direction: row;
+        /* background-color: rgb(255, 255, 255); */
+        /* border-radius: 20px; */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar ul
+    {
+        display: inline;
+        margin: auto;
+    }
+    .navbar ul li
+    {
+        display: inline ;
+        margin: 20px;
+        list-style: none;
+    }
+    .navbar ul li a
+    {
+        font-size: 24px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: 200;
+        color: rgb(245, 241, 241);
+        text-decoration: none;
+    }
+    .navbar ul li a:hover
+    {
+        text-decoration: underline;
+        color: rgb(170, 167, 167);
+    }
+    .search
+    {
+        /* border: 2px solid black; */
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search input
+    {
+        width: 270px;
+        height: 34px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-family: 'Baloo Bhai 2', Times, serif ;
+    }
+    /* .sign a button
+    {
+        font-size: 24px;
+        font-family: 'Baloo Bhai 2',  Times, serif;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        width: 100px;
+    } */
+    .formm
+    {
+        font-size: 24px;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        width: 400px;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* border: 1px solid white;
+        border-radius: 20px; */
+        margin-top: 70px;
+        margin-left: 70px;
+        /* margin: 100px 0px 0px 100px; */
+    }
+    .formm input
+    {
+        width: 370px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Baloo Bhai 2',  Times, serif;
+    }
+    #submi
+    {
+        background-color: #40dbf9;
+        height: 40px;
+    }
+    footer
+    {
+        background: transparent;
+        display: flex ;
+        justify-content: center ;
+        align-items: center;
+        /* width: 1000px; */
+        /* border: 1px solid white;
+        border-radius: 20px;    */
+        margin : auto;
+        margin-top: 40px;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        font-family: 'Baloo Bhai 2',  Times, serif;  
+    }
+    .form aside
+    {
+        width: 340px;
+        height: 400px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2',  Times, serif; 
+        /* border: 1px solid white;
+        border-radius: 10px; */
+        margin-right: 70px;
+        margin-top: 70px;
+    }
+    .form
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 500px)
+    {
+        .formm
+        {
+            width: 95%;
+            margin: auto;
+        }
+    }
+    @media (max-width:500px)
+    {
+        .container{
+            display: grid;
+            justify-content: center;
+            align-items: center;   
+        }
+    }
+    @media (max-width:500px)
+    {
+        .navbar ul li a
+        {
+            font-size: 16px;
+            margin: 10px;
+        }
+    }
+    @media (max-width:825px)
+    {
+        .form
+        {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <div class="container" id="cont">
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About us</a></li>
+                    <li> <a href="#">Details</a></li>
+                    <li> <a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search Here">
+            </div>
+        </div>
+    </header>
+    <div class="form">
+        <div class="formm">
+            Register Here
+            <input type="text" name="name"  id="name" placeholder="Enter Your Name">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <input type="number" name="age" id="age" placeholder="Enter Your Age">
+            <input type="text" name="address" id="address" placeholder="Enter Your Address">
+            <input type="number" name="contact_no" id="contact_no" placeholder="Contact Number">
+            <input type="submit" value="Submit" id="submi">
+        </div>
+        <aside>
+            <ul>
+                <li> 
+                    Regular physical activity can improve your muscle strength and boost your endurance.
+                </li>
+                <li> 
+                    Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently.</li>
+                <li>
+                    And when your heart and lung health improve, you have more energy to tackle daily chores.
+                </li>
+            </ul>
+        </aside>     
+    </div>
+    <footer>
+            Created By :  Sumit Tupe <br>
+            Electronics and Telecommunication Enginner at PICT, Pune - 43 <br>
+            Email : sumittupe@9623.gmail.com <br>
+    </footer>
+</body>
+</html>
